@@ -28,24 +28,6 @@ const games = [
     searchName: "Blockchain", // Add searchable name
   },
   {
-    id: "word-up",
-    title: "WORD UP",
-    description: "Guess the Word",
-    icon: Rocket,
-    status: "available",
-    route: "/word-up",
-    searchName: "Word Up", // Add searchable name
-  },
-  {
-    id: "space-invaders",
-    title: "",
-    description: "shoot meteors",
-    icon: Rocket,
-    status: "available",
-    route: "/space-invaders",
-    searchName: "Space Invaders", // Add searchable name
-  },
-  {
     id: "asteroids",
     title: "",
     description: "shoot meteors",
