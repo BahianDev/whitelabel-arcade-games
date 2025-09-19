@@ -8,7 +8,7 @@ import { WordUpGamePage } from "./games/word-up";
 
 import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
-import { morph } from "wagmi/chains";
+import { somniaTestnet } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
 import RequireWallet from "./auth/RequireWallet";
@@ -20,7 +20,7 @@ import { LeaderboardPage } from "./pages/LeaderboardPage";
 const config = getDefaultConfig({
   appName: "My RainbowKit App",
   projectId: "YOUR_PROJECT_ID",
-  chains: [morph],
+  chains: [somniaTestnet],
   ssr: true,
 });
 

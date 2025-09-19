@@ -59,7 +59,7 @@ export const HotWalletModal = ({
         </p>
 
         <label className="block">
-          Amount for gas (ETH):
+          Amount for gas (STT):
           <input
             className="border w-full px-2 py-3 bg-black mt-2"
             style={{

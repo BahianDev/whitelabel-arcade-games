@@ -24,7 +24,7 @@ export const LeaderboardPage: React.FC = () => {
   const [showJoinForm, setShowJoinForm] = useState(false);
 
   const CONTRACT_ADDRESS =
-    "0x8545141d6Ab44cA90A3E3bd802892C6A39193E8A" as `0x${string}`;
+    "0x7B1880D35FbBDadA4c6c2a7255C253852787006A" as `0x${string}`;
 
   const CONTRACT_ABI = [
     {

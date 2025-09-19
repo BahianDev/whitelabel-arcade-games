@@ -1,6 +1,6 @@
 import { ethers, NonceManager } from "ethers";
 
-const CONTRACT_ADDRESS = "0x6e445c51707466677477518900b09701c4E14e22";
+const CONTRACT_ADDRESS = "0x7B1880D35FbBDadA4c6c2a7255C253852787006A";
 const CONTRACT_ABI = [
   "function recordActions(uint256 gameId, address player, uint256 actions) external",
 ];
@@ -17,8 +17,8 @@ class TransactionQueue {
   private isProcessing = false;
 
   // 🔁 1 provider compartilhado
-  private provider = new ethers.WebSocketProvider(
-    "wss://fragrant-purple-tree.morph-mainnet.quiknode.pro/6e96b8502c9547474c7e899e07d658bb2d13e539/"
+  private provider = new ethers.JsonRpcProvider(
+    "https://dream-rpc.somnia.network	"
   );
 
   // 🔒 1 NonceManager por wallet
