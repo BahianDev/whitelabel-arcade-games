@@ -1,6 +1,6 @@
 import { ethers, NonceManager } from "ethers";
 
-const CONTRACT_ADDRESS = "0x7B1880D35FbBDadA4c6c2a7255C253852787006A";
+const CONTRACT_ADDRESS = "0xD4671fDc9BFb5fb056b13da714b370d6075f24bc";
 const CONTRACT_ABI = [
   "function recordActions(uint256 gameId, address player, uint256 actions) external",
 ];
@@ -18,7 +18,7 @@ class TransactionQueue {
 
   // 🔁 1 provider compartilhado
   private provider = new ethers.JsonRpcProvider(
-    "https://dream-rpc.somnia.network	"
+    "https://rpc.sepolia-api.lisk.com"
   );
 
   // 🔒 1 NonceManager por wallet

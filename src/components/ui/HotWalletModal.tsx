@@ -11,7 +11,7 @@ export const HotWalletModal = ({
   onClose: () => void;
 }) => {
   const hot = useHotWallet();
-  const [amount, setAmount] = useState("0.0001");
+  const [amount, setAmount] = useState("1");
   const { sendTransaction } = useSendTransaction();
   const { data: balanceData } = useBalance({
     address: hot?.address as `0x${string}`,
@@ -59,7 +59,7 @@ export const HotWalletModal = ({
         </p>
 
         <label className="block">
-          Amount for gas (STT):
+          Amount for gas (ETH):
           <input
             className="border w-full px-2 py-3 bg-black mt-2"
             style={{

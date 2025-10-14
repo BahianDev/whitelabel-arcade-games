@@ -112,7 +112,7 @@ export const Homepage: React.FC = () => {
         style={{ color: "#FFFFFF" }}
       >
         {/* Header */}
-        <Header title="SOMNIA ARCADE" />
+        <Header title="SANSA ARCADE" />
 
         {/* Main Content - Properly scrollable */}
         <main className="relative z-10 container mx-auto px-4 py-8">

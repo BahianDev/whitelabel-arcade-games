@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
         <div className="flex items-center justify-between">
           {/* Logo and Title - Left side */}
           <div className="flex items-center">
-              <img src="/logo.png" className="w-10 h-10 mr-10"/>
+              {/* <img src="/logo.png" className="w-10 h-10 mr-10"/> */}
             <div>
               <h1
                 className="pixel-header text-3xl md:text-4xl lg:text-6xl xl:text-5xl font-black tracking-wider"

@@ -24,7 +24,7 @@ export const LeaderboardPage: React.FC = () => {
   const [showJoinForm, setShowJoinForm] = useState(false);
 
   const CONTRACT_ADDRESS =
-    "0x7B1880D35FbBDadA4c6c2a7255C253852787006A" as `0x${string}`;
+    "0xD4671fDc9BFb5fb056b13da714b370d6075f24bc" as `0x${string}`;
 
   const CONTRACT_ABI = [
     {
@@ -152,7 +152,7 @@ export const LeaderboardPage: React.FC = () => {
 
 
       {/* Header */}
-      <Header title="MORPH MANIA" />
+      <Header title="SANSA ARCADE" />
 
       {/* Back Button */}
       <div className="relative z-10 container mx-auto px-4 pt-4">

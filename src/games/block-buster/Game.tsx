@@ -104,9 +104,9 @@ export const Game: React.FC = () => {
     // Handle food consumption
     if (willEatFood) {
       newScore += 10;
-      // transactionQueue.add({ hot, mainAddr }).catch((error) => {
-      //   console.error("Erro na transação:", error);
-      // });
+      transactionQueue.add({ hot, mainAddr }).catch((error) => {
+        console.error("Erro na transação:", error);
+      });
       food.respawn(snake.getBody(), GRID_SIZE);
 
       // Update game speed based on new score

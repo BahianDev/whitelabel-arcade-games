@@ -1,6 +1,6 @@
-# Somnia Arcade Games
+# Sansa Arcade Games
 
-Welcome to **Somnia Arcade Games**, a collection of retro-styled mini-games built with React and TypeScript. Some titles include Web3 features with wallet integration.
+Welcome to **SANSA Arcade Games**, a collection of retro-styled mini-games built with React and TypeScript. Some titles include Web3 features with wallet integration.
 
 ## 🎮 Games
 - **Token Sniper**, **Block Buster**, and **Word Up** require a connected wallet via [RainbowKit](https://rainbowkit.com/) and [wagmi](https://wagmi.sh/).
