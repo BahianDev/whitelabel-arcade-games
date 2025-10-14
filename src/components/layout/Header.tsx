@@ -6,11 +6,23 @@ import { audioManager } from "../../utils/audio";
 
 interface HeaderProps {
   title: string;
+  onOpenHotWallet?: () => void;
+  isHotWalletAvailable?: boolean;
 }
 
-export const Header: React.FC<HeaderProps> = ({ title }) => {
+export const Header: React.FC<HeaderProps> = ({
+  title,
+  onOpenHotWallet,
+  isHotWalletAvailable = true,
+}) => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const [hasUserInteracted, setHasUserInteracted] = useState(false);
+  const hotWalletButtonClasses = [
+    "pixel-header text-xs md:text-sm lg:text-base font-black tracking-widest uppercase",
+    "border-2 px-3 py-2 md:px-4 md:py-2 rounded",
+    "disabled:opacity-50 disabled:cursor-not-allowed",
+    "transition-colors duration-200 bg-transparent hover:bg-white hover:text-black",
+  ].join(" ");
 
   const toggleMusic = async (e: React.MouseEvent) => {
     e.stopPropagation(); // Prevent triggering other actions
@@ -39,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
         <div className="flex items-center justify-between">
           {/* Logo and Title - Left side */}
           <div className="flex items-center">
-              {/* <img src="/logo.png" className="w-10 h-10 mr-10"/> */}
+            {/* <img src="/logo.png" className="w-10 h-10 mr-10"/> */}
             <div>
               <h1
                 className="pixel-header text-3xl md:text-4xl lg:text-6xl xl:text-5xl font-black tracking-wider"
@@ -49,7 +61,23 @@ export const Header: React.FC<HeaderProps> = ({ title }) => {
               </h1>
             </div>
           </div>
-          <div className="flex space-x-5">
+          <div className="flex items-center space-x-5">
+            {onOpenHotWallet && (
+              <button
+                type="button"
+                onClick={onOpenHotWallet}
+                disabled={!isHotWalletAvailable}
+                aria-label="Open hot wallet"
+                className={hotWalletButtonClasses}
+                style={{
+                  borderColor: "#FFFFFF",
+                  color: "#FFFFFF",
+                  background: "transparent",
+                }}
+              >
+                Hot Wallet
+              </button>
+            )}
             <ConnectWallet />
             <MusicControl
               isMusicPlaying={isMusicPlaying}
