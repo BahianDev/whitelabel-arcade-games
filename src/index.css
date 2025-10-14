@@ -137,10 +137,7 @@ button {
   font-family: "PT Mono", serif;
   cursor: pointer;
 }
-button:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
+
 
 
 .container-do-canvas {

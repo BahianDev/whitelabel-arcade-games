@@ -61,12 +61,6 @@ export const Homepage: React.FC = () => {
   const { isConnected } = useAccount();
   const [showModal, setShowModal] = useState(false);
 
-  useEffect(() => {
-    if (isConnected) {
-      setShowModal(true);
-    }
-  }, [isConnected]);
-
   // Initialize homepage music when component mounts
   useEffect(() => {
     audioManager.initializeHomepageMusic().then((success) => {
@@ -112,7 +106,11 @@ export const Homepage: React.FC = () => {
         style={{ color: "#FFFFFF" }}
       >
         {/* Header */}
-        <Header title="SANSA ARCADE" />
+        <Header
+          title="SANSA ARCADE"
+          onOpenHotWallet={() => setShowModal(true)}
+          isHotWalletAvailable={isConnected}
+        />
 
         {/* Main Content - Properly scrollable */}
         <main className="relative z-10 container mx-auto px-4 py-8">
