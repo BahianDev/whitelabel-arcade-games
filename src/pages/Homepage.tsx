@@ -128,7 +128,7 @@ export const Homepage: React.FC = () => {
 
             <h2
               onClick={() => navigate("/leaderboard")}
-              className="text-xl md:text-2xl font-bold mb-2 tracking-wider ml-4"
+              className="text-xl md:text-2xl font-bold mb-2 tracking-wider ml-4 cursor-pointer"
               style={{
                 color: "#FFFFFF",
                 textShadow: "0 0 5px #FFFFFF",
