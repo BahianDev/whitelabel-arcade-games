@@ -33,10 +33,9 @@ export const ConnectWallet = () => {
               if (!connected) {
                 return (
                   <button
-                    className={`top-6 right-28 z-40 flex items-center justify-center group h-12 w-56 p-4 md:p-6 transition-all duration-300 transform hover:scale-105 aspect-square cursor-pointer opacity-75`}
+                    className="pixel-header text-base font-black tracking-widest uppercase text-white border-2 px-3 py-2 text-center transition-colors duration-200 bg-transparent hover:bg-white hover:text-black"
                     style={{
-                      background: "transparent",
-                      border: "2px solid #FFFFFF",
+                      borderColor: "#FFFFFF",
                       fontFamily: "'Press Start 2P', monospace",
                     }}
                     onClick={openConnectModal}
@@ -49,10 +48,9 @@ export const ConnectWallet = () => {
               if (chain.unsupported) {
                 return (
                   <button
-                    className={`top-6 right-28 z-40 flex items-center justify-center group h-12 w-56 p-4 md:p-6 transition-all duration-300 transform hover:scale-105 aspect-square cursor-pointer opacity-75`}
+                    className="pixel-header text-base font-black tracking-widest uppercase text-white border-2 px-3 py-2 text-center transition-colors duration-200 bg-transparent hover:bg-white hover:text-black"
                     style={{
-                      background: "transparent",
-                      border: "2px solid #FFFFFF",
+                      borderColor: "#FFFFFF",
                       fontFamily: "'Press Start 2P', monospace",
                     }}
                     onClick={openChainModal}
@@ -64,10 +62,9 @@ export const ConnectWallet = () => {
               }
               return (
                 <button
-                  className={`top-6 right-28 z-40 flex items-center justify-center group h-12 w-56 p-4 md:p-6 transition-all duration-300 transform hover:scale-105 aspect-square cursor-pointer opacity-75`}
+                  className="pixel-header text-base font-black tracking-widest uppercase text-white border-2 px-3 py-2 text-center transition-colors duration-200 bg-transparent hover:bg-white hover:text-black"
                   style={{
-                    background: "transparent",
-                    border: "2px solid #FFFFFF",
+                    borderColor: "#FFFFFF",
                     fontFamily: "'Press Start 2P', monospace",
                   }}
                   onClick={openAccountModal}
