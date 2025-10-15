@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ConnectWallet } from "../ui/ConnectWallet";
 import { MusicControl } from "../ui/MusicControl";
 import { audioManager } from "../../utils/audio";
@@ -61,6 +62,17 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
           </div>
           <div className="flex items-center space-x-5">
+            <Link
+              to="/profile"
+                className={`top-6 right-28 z-40 flex items-center justify-center  h-12 w-56 p-4 md:p-6 transition-all duration-300 transform hover:scale-105 aspect-square cursor-pointer opacity-75`}
+                style={{
+                  background: "transparent",
+                  border: "2px solid #FFFFFF",
+                  fontFamily: "'Press Start 2P', monospace",
+                }}
+            >
+              PROFILE
+            </Link>
             {onOpenHotWallet && (
               <button
                 type="button"
