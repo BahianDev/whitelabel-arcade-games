@@ -16,6 +16,7 @@ import Reacteroids from "./games/asteroids/Reacteroids";
 import SpaceInvaders from "./games/space-invaders/SpaceInvadersGame";
 import Tetris from "./games/tetris/Tetris";
 import { LeaderboardPage } from "./pages/LeaderboardPage";
+import { ProfilePage } from "./pages/ProfilePage";
 
 const config = getDefaultConfig({
   appName: "My RainbowKit App",
@@ -65,6 +66,7 @@ function App() {
                 <Route path="/tetris" element={<Tetris />} />
 
                 <Route path="/leaderboard" element={<LeaderboardPage />} />
+                <Route path="/profile" element={<ProfilePage />} />
                 <Route element={<RequireWallet redirectTo="/" />}>
                   <Route path="/token-sniper" element={<TokenSniperGame />} />
                   <Route path="/block-chain" element={<BlockBusterGame />} />
